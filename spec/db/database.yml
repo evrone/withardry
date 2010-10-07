@@ -1,0 +1,3 @@
+sqlite3:
+  :adapter: sqlite3
+  :database: vendor/plugins/withardry/spec/db/withardry.sqlite3.db
