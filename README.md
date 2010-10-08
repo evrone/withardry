@@ -1,32 +1,40 @@
 # Withardry
 
-Withardry is a Ruby on Rails plugin for DRY'ing models. Every day we write 
-code like this:
+## Install
 
-    named_scope :with_title, lambda { |title| { :conditions => { :title => title }}}
+    ./script/plugin install git://github.com/evrone/withardry.git
 
-If so, you may find this plugin useful a bit. You can use now something like this:
+## Usage
 
     class Post < ActiveRecord::Base      
       withardry :title
+      
+      // exactly same as
+      // named_scope :with_title, lambda { |t| { :conditions => { :title => t }}}
     end
-
-And use this anywhere inside your app:
+    
+Now use this inside your app:
 
     Post.with_title("Some title")
 
 Sure, it can handle some options
 
-    class Post < ActiveRecord::Base      
+    class Post < ActiveRecord::Base
       belongs_to :user
       
       withardry :user, :prefix => "by", :as => "user_id"
+      
+      // exactly same as
+      // named_scope by_user, lambda {|u| { :conditions => { :user_id => u }}}
     end
+
+And then anywhere in your app
 
     Post.by_user(some_user_id)
 
 
-## Install
+## About 
 
-    ./script/plugin install git://github.com/evrone/withardry.git
+© Ognevsky Andrey, evrone.ru
 
+### Feel free for pull requests
