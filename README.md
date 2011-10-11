@@ -41,7 +41,7 @@ And then anywhere in your app
 
 ## Contributors 
 
-- Ognevsky Andrey, [Evrone Company](https://github.com/evrone)
+- [Andrey Ognevsky](https://github.com/ognevsky), [Evrone Company](https://github.com/evrone)
 - [Kirill Shatrov](https://github.com/kirs/), [Evrone Company](https://github.com/evrone)
 
 ## Feel free for pull requests
