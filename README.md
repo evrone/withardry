@@ -44,4 +44,9 @@ And then anywhere in your app
 - [Andrey Ognevsky](https://github.com/ognevsky), [Evrone Company](https://github.com/evrone)
 - [Kirill Shatrov](https://github.com/kirs/), [Evrone Company](https://github.com/evrone)
 
+## Todo
+
+- Ensure that tests works with Rails 3
+- Add support of relations in withardry method (e.g. make withardry :user == withardry :user_id)
+
 ## Feel free for pull requests
