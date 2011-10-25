@@ -14,7 +14,7 @@ module Withardry
     define_method(:to_param) do
       attribute = self.send(field)
       stack = [id.to_s]
-      stack << I18n.transliterate(attribute).gsub(/[^a-zA-Z0-9]+/, ' ').strip if attribute.present?
+      stack << attribute.parameterize if attribute.present?
       stack.join("-")
     end
   end
