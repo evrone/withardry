@@ -10,7 +10,7 @@
       withardry :title
       
       # exactly same as
-      # named_scope :with_title, lambda { |t| { :conditions => { :title => t }}}
+      # scope :with_title, lambda { |t| where(:title => t) }
       
       friendly_url
       # same as to_param with model id and name attribute
@@ -22,7 +22,9 @@
 Now use this inside your app:
 
     Post.with_title("Some title")
-    Post.to_param # => "1-title-example"
+    
+    post = Post.create(:title => "Title Example")
+    post.to_param # => "1-title-example"
 
 Sure, it can handle some options
 
@@ -32,7 +34,7 @@ Sure, it can handle some options
       withardry :user, :prefix => "by", :as => "user_id"
       
       // exactly same as
-      // named_scope by_user, lambda {|u| { :conditions => { :user_id => u }}}
+      // scope :by_user, lambda {|u| where(:user_id => u) }
     end
 
 And then anywhere in your app
@@ -46,7 +48,7 @@ And then anywhere in your app
 
 ## Todo
 
-- Ensure that tests works with Rails 3
-- Add support of relations in withardry method (e.g. make withardry :user == withardry :user_id)
+- Ensure that tests work with Rails 3
+- Add support of relations in withardry method (e.g. use of `withardry :user` is equal to `withardry :user_id` if there is a relation with User)
 
 ## Feel free for pull requests
