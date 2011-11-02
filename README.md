@@ -2,7 +2,7 @@
 
 ## Install
 
-    gem "withardry", :git => "git://github.com/evrone/withardry.git"
+    gem "withardry"
 
 ## Usage
 
