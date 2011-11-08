@@ -1,5 +1,6 @@
 # Withardry
 
+Gem provides shorcuts for ActiveRecord scopes and to_param method. Current version works with Rails 3.x only but [old version](https://github.com/evrone/withardry/tree/69914e7e6281df2e748da08e0cf6ed4066c5766c) is capable with Rails 2.x.
 ## Install
 
     gem "withardry"
