@@ -1,11 +1,24 @@
 # Withardry
 
-Gem provides shorcuts for ActiveRecord scopes and to_param method. Current version works with Rails 3.x only but [old version](https://github.com/evrone/withardry/tree/69914e7e6281df2e748da08e0cf6ed4066c5766c) is capable with Rails 2.x.
-## Install
+Gem provides shorcuts for ActiveRecord scopes and to_param method. 
+
+<a href="https://evrone.com/?utm_source=github.com">
+  <img src="https://evrone.com/logo/evrone-sponsored-logo.png"
+       alt="Sponsored by Evrone" width="231">
+</a>
+
+## Getting Started
+### Prerequisites
+
+Current version works with Rails 3.x only 
+but [old version](https://github.com/evrone/withardry/tree/69914e7e6281df2e748da08e0cf6ed4066c5766c) 
+is capable with Rails 2.x.
+
+### Installation
 
     gem "withardry"
 
-## Usage
+### Usage
 
     class Post < ActiveRecord::Base      
       withardry :title
@@ -42,14 +55,21 @@ And then anywhere in your app
 
     Post.by_user(some_user_id)
 
-## Contributors 
+## Contributing
 
-- [Andrey Ognevsky](https://github.com/ognevsky), [Evrone Company](https://github.com/evrone)
-- [Kirill Shatrov](https://github.com/kirs/), [Evrone Company](https://github.com/evrone)
+Please read [Code of Conduct](CODE-OF-CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md) for submitting pull requests to us.
 
-## Todo
+## Versioning
 
-- Ensure that tests work with Rails 3
-- Add support of relations in withardry method (e.g. use of `withardry :user` is equal to `withardry :user_id` if there is a relation with User)
+We use [SemVer](http://semver.org/) for versioning. For the versions available, 
+see the [tags on this repository](https://github.com/evrone/withardry/tags). 
 
-## Feel free for pull requests
+## Authors
+
+* [Andrey Ognevsky](https://github.com/ognevsky) - *Initial work*
+
+See also the list of [contributors](https://github.com/evrone/withardry/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
