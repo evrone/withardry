@@ -1,3 +1,4 @@
+# PLEASE NOTE, THIS PROJECT IS NO LONGER BEING MAINTAINED
 # Withardry
 
 Gem provides shorcuts for ActiveRecord scopes and to_param method. 
